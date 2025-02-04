@@ -50,9 +50,9 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		switch msg.String() {
 		case "ctrl+c", "esc", "q", "enter":
 			return m, tea.Quit
-		case "up", "k", "l", "=":
+		case "up", "k", "l", "=", "right":
 			m.controls.IncreaseVolume(5)
-		case "down", "j", "h", "-":
+		case "down", "j", "h", "-", "left":
 			m.controls.DecreaseVolume(5)
 		case "m":
 			if m.muted {
