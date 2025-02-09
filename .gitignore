@@ -1,3 +1,4 @@
 bin/
 example.md
 dist/
+vendor/
